@@ -1,1 +1,68 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="description" content="Play sudoku online in your browser on any device"><title>Sudoku Game Online</title><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link href="assets/css/app.a15ef1ecc6499ffb2037.css" rel="stylesheet"></head><body><h1 class="page-title">Sudoku</h1><div class="menu"><div class="menu__content"><h4 class="menu__title">Выберите уровень сложности</h4><span class="menu__warn">(текущая доска очистится)</span><div class="menu__level-list"><button class="menu__btn" value="37" data-lives="4">Легкий</button><div class="menu__level-description">4 жизни</div><button class="menu__btn" value="47" data-lives="3">Нормальный</button><div class="menu__level-description">3 жизни</div><button class="menu__btn" value="57" data-lives="2">Тяжелый</button><div class="menu__level-description">2 жизни</div><button class="menu__btn" value="67" data-lives="5">Невозможный</button><div class="menu__level-description">5 жизней</div></div></div></div><div class="lives"><div class="live"></div></div><button class="menu__toggle"><span></span><span></span><span></span></button><div class="board"></div><div class="error"></div><div class="numbers"><div class="numbers__content row"><div class="number cell">1</div><div class="number cell">2</div><div class="number cell">3</div><div class="number cell">4</div><div class="number cell">5</div><div class="number cell">6</div><div class="number cell">7</div><div class="number cell">8</div><div class="number cell">9</div></div></div><script type="text/javascript" src="assets/js/vendors.141d92a9c856b5d5f54f.js"></script><script type="text/javascript" src="assets/js/app.d2181a05b8121db6e2ee.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Play sudoku online in your browser on any device">
+  <title>Sudoku Game Online</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="assets/css/app.a15ef1ecc6499ffb2037.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="page-title">Sudoku</h1>
+  <div class="menu">
+    <div class="menu__content">
+      <h4 class="menu__title">Выберите уровень сложности</h4><span class="menu__warn">(текущая доска очистится)</span>
+      <div class="menu__level-list"><button class="menu__btn" value="37" data-lives="4">Легкий</button>
+        <div class="menu__level-description">4 жизни</div><button class="menu__btn" value="47"
+          data-lives="3">Нормальный</button>
+        <div class="menu__level-description">3 жизни</div><button class="menu__btn" value="57"
+          data-lives="2">Тяжелый</button>
+        <div class="menu__level-description">2 жизни</div><button class="menu__btn" value="67"
+          data-lives="5">Невозможный</button>
+        <div class="menu__level-description">5 жизней</div>
+      </div>
+    </div>
+  </div>
+  <div class="lives">
+    <div class="live"></div>
+  </div><button class="menu__toggle"><span></span><span></span><span></span></button>
+  <div class="board"></div>
+  <div class="error"></div>
+  <div class="numbers">
+    <div class="numbers__content row">
+      <div class="number cell">1</div>
+      <div class="number cell">2</div>
+      <div class="number cell">3</div>
+      <div class="number cell">4</div>
+      <div class="number cell">5</div>
+      <div class="number cell">6</div>
+      <div class="number cell">7</div>
+      <div class="number cell">8</div>
+      <div class="number cell">9</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/vendors.141d92a9c856b5d5f54f.js"></script>
+  <script type="text/javascript" src="assets/js/app.d2181a05b8121db6e2ee.js"></script>
+</body>
+
+</html>
